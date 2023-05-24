@@ -18,18 +18,18 @@ class _SignInScreenState extends State<SignInScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 50),
+                SizedBox(height: screenHeight / 15),
                 Container(
-                  height: 60,
+                  height: screenHeight / 15,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage('assets/images/logoTurkpark.webp')),
                   ),
                 ),
-                SizedBox(height: 100),
+                SizedBox(height: screenHeight / 10),
                 Container(
-                  height: 500,
-                  width: 350,
+                  height: screenHeight / 1.6,
+                  width: screenWidth / 1.1,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
@@ -38,8 +38,8 @@ class _SignInScreenState extends State<SignInScreen> {
                   child: Column(
                     children: [
                       Container(
-                        height: 70,
-                        width: 350,
+                        height: screenHeight / 13,
+                        width: screenWidth / 1.1,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(14),
                           color: Color.fromRGBO(48, 213, 200, 1),
@@ -56,7 +56,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 50),
+                      SizedBox(height: screenHeight / 15),
                       Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Column(
@@ -68,7 +68,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 style: TextStyle(fontSize: 20),
                               ),
                             ),
-                            SizedBox(height: 2),
+                            SizedBox(height: screenHeight / 200),
                             TextField(
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
@@ -88,7 +88,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 25),
+                      SizedBox(height: screenHeight / 20),
                       Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Column(
@@ -100,7 +100,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 style: TextStyle(fontSize: 20),
                               ),
                             ),
-                            SizedBox(height: 2),
+                            SizedBox(height: screenHeight / 200),
                             TextField(
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
@@ -120,7 +120,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 60),
+                      SizedBox(height: screenHeight / 15),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(200, 50),

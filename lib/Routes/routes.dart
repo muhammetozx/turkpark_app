@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:turkpark_app/Screens/forgotPasswordScreen.dart';
+import 'package:turkpark_app/Screens/resetPasswordScreen.dart';
 import 'package:turkpark_app/Screens/profileEditScreen.dart';
 import 'package:turkpark_app/Screens/BottomNavigationBarScreen/profileScreen.dart';
 import 'package:turkpark_app/Screens/signInScreen.dart';
@@ -27,8 +27,8 @@ class Routes {
       case '/SignInScreen':
         return _route(SignInScreen(), settings);
 
-      case '/ForgotPasswordScreen':
-        return _route(FortgotPasswordScreen(), settings);
+      case '/ResetPasswordScreen':
+        return _route(ResetPasswordScreen(), settings);
 
       case '/BottomNavigationBarWidget':
         return _route(BottomNavigationBarWidget(), settings);

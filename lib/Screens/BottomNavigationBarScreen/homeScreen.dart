@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:turkpark_app/Consts/deConst.dart';
 import 'package:turkpark_app/Screens/TabBarScreen/hizmetlerScreen.dart';
 import 'package:turkpark_app/Screens/TabBarScreen/sektorlerScreen.dart';
+import 'package:turkpark_app/widgets/HiddenDrawer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -38,14 +40,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.menu, size: 40),
-                      style: ButtonStyle(),
                       color: Color.fromRGBO(48, 213, 200, 1),
                     ),
                     Spacer(),
                     IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.notifications, size: 40),
-                      style: ButtonStyle(),
                       color: Color.fromRGBO(48, 213, 200, 1),
                     ),
                   ],
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              height: 60,
+              height: screenHeight / 15,
               decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage('assets/images/logoTurkpark.webp')),
@@ -62,11 +62,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                width: 300,
-                height: 45,
+                width: screenWidth / 1.3,
+                height: screenHeight / 20,
                 decoration: BoxDecoration(
                   border: Border.all(
-                      color: Color.fromRGBO(48, 213, 200, 1), width: 2),
+                      color: Color.fromRGBO(48, 213, 200, 1),
+                      width: screenWidth / 200),
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(
                     25.0,
