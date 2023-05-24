@@ -4,7 +4,6 @@ import 'package:turkpark_app/Screens/BottomNavigationBarScreen/homeScreen.dart';
 import 'package:turkpark_app/Screens/BottomNavigationBarScreen/messageScreen.dart';
 import 'package:turkpark_app/Screens/BottomNavigationBarScreen/profileScreen.dart';
 
-
 class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({super.key});
 

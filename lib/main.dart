@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:turkpark_app/Consts/deConst.dart';
 import 'package:turkpark_app/Routes/routes.dart';
 import 'package:turkpark_app/Screens/welcomeScreen.dart';
-import 'package:turkpark_app/widgets/HiddenDrawer.dart';
 
 void main() {
   runApp(const MyApp());

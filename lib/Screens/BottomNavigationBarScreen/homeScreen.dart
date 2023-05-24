@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:turkpark_app/Consts/deConst.dart';
 import 'package:turkpark_app/Screens/TabBarScreen/hizmetlerScreen.dart';
 import 'package:turkpark_app/Screens/TabBarScreen/sektorlerScreen.dart';
-import 'package:turkpark_app/widgets/HiddenDrawer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,9 +25,19 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     super.dispose();
   }
 
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
+      drawer: Drawer(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(50),
+            bottomRight: Radius.circular(700),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -38,7 +47,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 child: Row(
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        if (scaffoldKey.currentState!.isDrawerOpen) {
+                          scaffoldKey.currentState!.closeDrawer();
+                          //close drawer, if drawer is open
+                        } else {
+                          scaffoldKey.currentState!.openDrawer();
+                          //open drawer, if drawer is closed
+                        }
+                      },
                       icon: Icon(Icons.menu, size: 40),
                       color: Color.fromRGBO(48, 213, 200, 1),
                     ),
