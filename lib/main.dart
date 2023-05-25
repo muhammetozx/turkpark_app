@@ -14,7 +14,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Türkpark',
-      theme: ThemeData(),
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+          shadowColor: Colors.transparent,
+          iconTheme: IconThemeData(
+            color: Color.fromRGBO(48, 213, 200, 1),
+            size: 60,
+          ),
+        ),
+        scaffoldBackgroundColor: Colors.white,
+      ),
       home: WelcomeScreen(),
       onGenerateRoute: Routes.routes,
     );

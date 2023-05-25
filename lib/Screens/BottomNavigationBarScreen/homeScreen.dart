@@ -30,18 +30,10 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      drawer: Drawer(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-            topRight: Radius.circular(50),
-            bottomRight: Radius.circular(700),
-          ),
-        ),
-      ),
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 child: Row(
@@ -68,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ],
                 ),
               ),
-            ),
+            ),*/
             Container(
               height: screenHeight / 15,
               decoration: BoxDecoration(
